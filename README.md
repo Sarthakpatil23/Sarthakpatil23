@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Sarthakpatil23
-- 👀 I’m interested in learing webdevlopment
+- 👀 I’m interested in learing web devlopment
 - 🌱 I’m currently learning Python
 - 📫 How to reach me: Gmail:-sarthakpatil2194@gmail.com
 - 😄 Pronouns: He/Him
