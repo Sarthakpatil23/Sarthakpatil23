@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'qprint/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Print Express</h1>
+    </header>
+    <main>
+        <h2>Welcome</h2>
+        <a href="{% url 'landing_page' %}">Go to Welcome Page</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Print Express. All rights reserved.</p>
+    </footer>
+</body>
+</html>

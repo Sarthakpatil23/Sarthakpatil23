@@ -1,0 +1,51 @@
+<!-- filepath: /c:/Users/Sarthak/Project/Printp/qprint/templates/shop_owner_dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Owner Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f5f5f5; margin: 0; padding: 0; }
+        header { background-color: #00796b; color: white; padding: 20px; }
+        .container { padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 10px; text-align: left; }
+        th { background-color: #00796b; color: white; }
+        footer { background-color: #00796b; color: white; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop Owner Dashboard</h1>
+    </header>
+    <div class="container">
+        <h1>Uploaded Files</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>File</th>
+                    <th>Color Option</th>
+                    <th>Print Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for upload in uploads %}
+                <tr>
+                    <td>{{ upload.username }}</td>
+                    <td>{{ upload.file }}</td>
+                    <td>{{ upload.color_option }}</td>
+                    <td>{{ upload.print_option }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2025 PrintExpress. All rights reserved.</p>
+    </footer>
+</body>
+</html>

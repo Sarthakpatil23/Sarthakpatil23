@@ -1,0 +1,44 @@
+<!-- filepath: /c:/Users/Sarthak/Project/Printp/qprint/templates/shop_owner_login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Owner Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f5f5f5; margin: 0; padding: 0; }
+        header { background-color: #00796b; color: white; padding: 20px; }
+        .container { padding: 20px; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input { width: 100%; padding: 10px; }
+        button { padding: 10px 20px; background-color: #00796b; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; }
+        button:hover { background-color: #004d40; }
+        footer { background-color: #00796b; color: white; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop Owner Login</h1>
+    </header>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 PrintExpress. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Success</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'qprint/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Printp</h1>
+    </header>
+    <main>
+        <h2>File Uploaded Successfully</h2>
+        <p>Your file has been uploaded and sent successfully.</p>
+        <a href="{% url 'landing_page' %}">Go to Landing Page</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Printp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

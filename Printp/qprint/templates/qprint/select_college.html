@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select College</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'qprint/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Print Express</h1>
+        <nav>
+            <a href="{% url 'first_page' %}">Home</a>
+            <a href="{% url 'about_page' %}">About</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="card">
+            <h2>Select Your College</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Next</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Print Express. All rights reserved.</p>
+    </footer>
+</body>
+</html>
